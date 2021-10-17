@@ -1,5 +1,7 @@
 # Technicall Challenges NZ
  
+ ## [Code](https://github.com/rogeralbp/interview-challenges/blob/main/nz-challenges/solution.js)
+
  ## Multiply two numbers without using the multiplication operator
 
  ```
