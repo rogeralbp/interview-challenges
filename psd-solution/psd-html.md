@@ -4,6 +4,8 @@
 
 - The page must to be Responsive
 
+- This Page is hosted in a Heroku App
+
 
 ## The PSD File as Image
 
