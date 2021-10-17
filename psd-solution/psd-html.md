@@ -1,8 +1,8 @@
 # [PSD to HTML Challenge](https://rogeroporta-psd.herokuapp.com/)
 
-## Create an HTML page based on a PSD File
+- Create an HTML page based on a PSD File
 
-## The page must to be Responsive
+- The page must to be Responsive
 
 
 ## The PSD File as Image
