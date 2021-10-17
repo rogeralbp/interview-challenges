@@ -17,7 +17,7 @@ const multiply = (a, b) => {
 }
 
 const a = multiply( 50, 50);
-console.log( a );
+console.log('Exercise #1 ', a );
 
 
 // Get the highest number in an array iterating only once

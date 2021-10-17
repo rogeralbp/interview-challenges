@@ -9,7 +9,7 @@ Create an HTML page based on a PSD File with the taking into account Responsive 
 - Calculator Of IMC using Forms
 - Asking by input console 3 values to print the min and max value of them
 - Asking by input console 3 values to print the Total Sum and Average value of them
-- Asking by input console 3 values to print the Total Sum and Average value of them
+- Loop that print by console all the Not pair numbers beetwen 1 - 100
 - Control Customer System using OOP and Forms
 
 ## [Technicall Challenges NZ](https://github.com/rogeralbp/interview-challenges/blob/main/nz-challenges/exercises.md)
