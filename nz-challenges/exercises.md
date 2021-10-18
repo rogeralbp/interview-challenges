@@ -106,6 +106,19 @@ console.log('Exercise #5 ',  e ); // -> [ 'friend', 2 ]
 
  ```
 
- 
+ const isPalindrome = (string) => {
+
+    string = string.replace(/\s+/g, '')
+    const lowerString    = string.toLowerCase()
+    const splittedString = lowerString.split(' ')
+    const revertedString = splittedString.reverse()
+    const joinedString   = revertedString.join('')
+
+    return lowerString == joinedString
+
+}
+
+const f = isPalindrome('Words that are not Palindromes')
+console.log('Exercise #6 ',  f ); // true
 
  ```

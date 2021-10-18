@@ -1,6 +1,5 @@
 
 // Multiply two numbers without using the multiplication operator
-
 const multiply = (a, b) => {
 
     let result = 0;
@@ -21,7 +20,6 @@ console.log('Exercise #1 ', a );
 
 
 // Get the highest number in an array iterating only once
-
 const getBiggest = ( array ) =>  array.reduce( ( accumulator, element ) => accumulator > element ? accumulator : element ) 
 
 const b = getBiggest( [50, 1560, 30, 66, 1, 0, -2000 ] );
@@ -29,7 +27,6 @@ const b = getBiggest( [50, 1560, 30, 66, 1, 0, -2000 ] );
 console.log('Exercise #2 ',  b );
 
 // Iterating an array only once, create a function that removes: undefined, False, 0, or null
-
 const cleanArray = ( array ) =>  array.reduce( ( accumulator, element ) => {
 
     if ( element ) {
@@ -56,7 +53,6 @@ const d = oneArray( matrix );
 console.log('Exercise #4 ',  d ); // -> [ 1, 2, [ 3, 4 ], [ 5, 6 ] ]
 
 // Writable function to count the number of times a word is repeated in array
-
 const repeatedWord = string => {
     
     const lowerString    = string.toLowerCase()
@@ -82,5 +78,19 @@ const repeatedWord = string => {
 const e = repeatedWord('This a Test of repeated words my Friend, See you Friend')
 console.log('Exercise #5 ',  e ); // -> [ 'friend', 2 ]
 
-// Check if a string is palindrome (words or phrases)
 
+// Check if a string is palindrome (words or phrases)
+const isPalindrome = (string) => {
+
+    string = string.replace(/\s+/g, '')
+    const lowerString    = string.toLowerCase()
+    const splittedString = lowerString.split(' ')
+    const revertedString = splittedString.reverse()
+    const joinedString   = revertedString.join('')
+
+    return lowerString == joinedString
+
+}
+
+const f = isPalindrome('Words that are not Palindromes')
+console.log('Exercise #6 ',  f ); // true
