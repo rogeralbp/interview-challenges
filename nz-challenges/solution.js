@@ -16,7 +16,7 @@ const multiply = (a, b) => {
 
 }
 
-const a = multiply( 50, 50);
+const a = multiply( 50, 50 );
 console.log('Exercise #1 ', a );
 
 
@@ -46,8 +46,41 @@ const c = cleanArray( [1, undefined, 25, null, 0, 4590] );
 console.log('Exercise #3 ',  c ); // -> [ 1, 25, 4590 ]
 
 // Write function that flattens arrays on one level (separate arrays on levels)
+// flatten = aplanar matriz
+const matrix = [ [1 , 2] , [[3 , 4]] , [[5 , 6]] ];
 
+const oneArray = array => array.reduce( ( accumulator, element ) => accumulator.concat( element ), [] )
 
+const d = oneArray( matrix );
+
+console.log('Exercise #4 ',  d ); // -> [ 1, 2, [ 3, 4 ], [ 5, 6 ] ]
 
 // Writable function to count the number of times a word is repeated in array
+
+const repeatedWord = string => {
+    
+    const lowerString    = string.toLowerCase()
+    const splittedString = lowerString.split(' ')
+    const reducedString  = splittedString.reduce( (accumulator, element) => {
+
+        if ( accumulator[element] ) {
+
+            accumulator[element]++
+        
+        } else {
+
+            accumulator[element] = 1
+        }
+
+        return accumulator
+
+    } , {} )
+
+    return Object.entries( reducedString ).reduce((accumulator, element ) => accumulator[1] > element[1] ? accumulator : element)
+}
+
+const e = repeatedWord('This a Test of repeated words my Friend, See you Friend')
+console.log('Exercise #5 ',  e ); // -> [ 'friend', 2 ]
+
 // Check if a string is palindrome (words or phrases)
+
